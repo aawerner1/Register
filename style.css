@@ -1,0 +1,174 @@
+/* PAGE 1 */
+
+body {
+ background-color: #f3f3f3;
+}
+
+.page1 {
+    position: absolute;
+    width: 100%;
+    background-color: #db4213;
+    height: 204px;
+}
+
+.bloco {
+    position: relative;
+    display: block;
+    top: 30px;
+    max-width: 450px;
+    margin: 0 auto; 
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+}
+
+.estrutura {
+    padding-top: 2em;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+/*JUMBTRON*/
+
+
+.jumbotron {
+    background: #fff;
+    line-height: 0;
+    margin-bottom: 0rem;
+    padding: 2rem;
+    border-radius: 0px;
+
+}
+
+.jumbotron h1 {
+    color: #db4213;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.jumbotron p{
+    color: #8c8c8c;
+    font-size: 1em;
+}
+
+.beneficios {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.beneficios .item-2 {
+    padding: 0 10% 0 10%;
+    border-left: 2px solid #f3f3f3;
+    border-right: 2px solid #f3f3f3;
+}
+
+.beneficios p {
+    color: #8c8c8c;
+    font-size: .8em;   
+}
+
+.beneficios h6 {
+    color: #db4213;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* PROGRESS */
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progresso {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.progresso p {
+    width: 90%;
+    font-size: .8em;
+    color: #db4213;
+}
+
+
+/* FORMULARIO*/
+
+.form-edit {
+    padding-bottom: 2em;
+}
+
+.body {
+    padding: 30px;
+    background-color: #f3f3f3;
+}
+
+.form-group label {
+    margin-bottom: 0rem;
+    font-size: .8em;
+    color: #8c8c8c;
+}
+
+::-webkit-input-placeholder {
+    font-size: .8em;
+    text-align: center;
+}
+
+.input-group-text {
+    font-size: .8em;
+    color: #8c8c8c;  
+}
+
+.btn-secondary {
+    font-size: .8em;
+    padding: 1em;
+    color: #f7f7f7; 
+    background-color: #707070;
+}
+
+.btn-secondary:hover {
+    background-color: #db4213;
+}
+
+.form-check label {
+    margin-left: 10px;
+    font-size: .7em;
+    color: #8c8c8c; 
+}
+
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* PAGE 2 */
+
+.text-page2 p{
+    color: #8c8c8c;
+    font-size: 1em;
+}
+
+
+.card img {
+    width: 20%;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 450px) {
+    .beneficios .item-2 {
+        padding: 0 5% 0 5%;
+    }   
+
+    .estrutura {
+        padding-top: 2em;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
