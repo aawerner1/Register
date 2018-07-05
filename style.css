@@ -22,6 +22,7 @@ body {
 
 .estrutura {
     padding-top: 2em;
+    padding-bottom: 2em;
     padding-right: 10%;
     padding-left: 10%;
 }
@@ -57,7 +58,7 @@ body {
 }
 
 .beneficios .item-2 {
-    padding: 0 10% 0 10%;
+    padding: 0 5% 0 5%;
     border-left: 2px solid #f3f3f3;
     border-right: 2px solid #f3f3f3;
 }
@@ -153,16 +154,77 @@ body {
     font-size: 1em;
 }
 
+/*CARDS */
 
-.card img {
-    width: 20%;
+.card-deck {
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.card {
+    align-items: center;
+    height: 60%;
+    padding: 10px;
+    margin: 6px;   
+}
+.card:active {
+    border: 2px solid #db4213;
+}
+
+.card-body {
+    display: flex;
+    align-items: flex-end;
+    padding: .50rem;
+}
+
+.card-body p{
+    text-align: center;
+    color: #8c8c8c;
+    font-size: .7em;
+}
+
+.card-deck .card {
+    width: 53%;
+}
+
+.card textarea {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 0rem;
+}
+
+.card textarea::-webkit-input-placeholder {
+    font-size: .7em;
+    text-align: center;
+}
+
+.btn-page2 {
+    display: block;
+}
+
+.btn .back {
+    font-size: .7em;
+    padding: 1em;
+    color: #8c8c8c;
+    background-color: #f3f3f3;
+    border: 1px solid #8c8c8c;
+    width: 85%;
+}
+
+.create button {
+    font-size: .7em;
+    padding: 1em;
+    color: #eee;
+    background-color: #db4213;
+    width: 85%;
+}
+
 
 /* MEDIA QUERY */
 
 @media (max-width: 450px) {
     .beneficios .item-2 {
-        padding: 0 5% 0 5%;
+        padding: 0 8% 0 8%;
     }   
 
     .estrutura {
@@ -170,5 +232,36 @@ body {
         padding-right: 5%;
         padding-left: 5%;
     }
+
+    .btn .back {
+        width: 85%;
+    }
+    
+    .create button {
+        width: 85%;
+    }
+
 }
 
+@media (max-width: 375px) {
+    .beneficios .item-2 {
+        padding: 0 7% 0 7%;
+    }  
+}
+
+
+@media (max-width: 320px) {
+    .card-body p{
+        font-size: .6em;
+    }
+
+    .estrutura {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .beneficios .item-2 {
+        padding: 0 5% 0 5%;
+    }  
+
+}
