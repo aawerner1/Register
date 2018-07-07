@@ -1,204 +1,168 @@
-/* PAGE 1 */
+/* === GLOBAL === */
 
 body {
  background-color: #f7f7f7;
 }
 
 .page1 {
-    position: absolute;
     width: 100%;
     background-color: #db4213;
-    height: 204px;
+    height: 180px;
 }
 
 .bloco {
-    position: relative;
-    display: block;
     top: 30px;
     max-width: 450px;
+    height: 730px;
     margin: 0 auto; 
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
 }
 
 .estrutura {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding: 1.7rem;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+    outline: 0;
+    border-color: #db4213;
+    box-shadow: none !important;
+}
+
+/* === PAGE 1 === */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .1rem;
 }
 
 /*JUMBTRON*/
-
-
-.jumbotron {
-    background: #fff;
-    line-height: 0;
-    margin-bottom: 0rem;
-    padding: 2rem;
-    border-radius: 0px;
-    
-
-}
-
-.jumbotron h1 {
-    color: #db4213;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.jumbotron p{
-    color: #8c8c8c;
-    font-size: 1em;
-    line-height: 1;
-}
 
 .jumbotron .display-3 {
     margin-top: 36px;
 }
 
-.beneficios {
-    margin-top: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.jumbotron {
+    background: #fff;
+    height: 150px;
+    margin-bottom: 0rem;
+    border-radius: 0px;
 }
 
-.beneficios .item-2 {
-    padding: 0 5% 0 5%;
-    border-left: 2px solid #DCDCDC;
-    border-right: 2px solid #DCDCDC;
+.jumbotron h1 {
+    color: #db4213;
+    font-size: 1.5em;
 }
 
-.beneficios p {
+.jumbotron p{
+    color: #8c8c8c;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.vl {
+    border-left: 2px solid #f3f3f3;
+    height: 40px;
+}
+
+.advantages p {
     color: #8c8c8c;
     font-size: .8em;   
 }
 
-.beneficios h6 {
+.advantages h6 {
     color: #db4213;
-    text-align: center;
-    font-weight: bold;
 }
 
 /* PROGRESS */
 
-.barra {
-    display: flex;
-    justify-content: space-between;
-}
-
-.progress {
-    background-color: #fff !important;
+.progress{
+    background-color: #ccc;
 }
 
 .bg-danger {
-    background-color: #db4213 !important
+    background-color: #db4213 !important;
 }
 
-.progresso {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.progresso p {
-    width: 90%;
+.progress-caption p {
+    margin: 0 10px 0 10px;
     font-size: .8em;
     color: #db4213;
 }
 
-
 /* FORMULARIO*/
 
-.form-edit {
-    padding-bottom: 2em;
-}
-
-.body {
-    padding: 30px;
-    background-color: #f3f3f3;
-}
-
-.form-group label {
-    margin-bottom: 0rem;
+.form-group label, 
+.input-group-text, 
+.btn-secondary {
     font-size: .8em;
     color: #8c8c8c;
 }
 
-::-webkit-input-placeholder {
-    font-size: .8em;
-    text-align: center;
+input.form-control {
+    margin-bottom: 1em;
 }
 
-.input-group-text {
-    font-size: .8em;
-    color: #8c8c8c;  
+.custom-checkbox label {
+    color: #8c8c8c;   
 }
 
 .btn-secondary {
-    font-size: .8em;
     padding: 1em;
     color: #f7f7f7; 
-    background-color: #707070;
 }
 
-.btn-secondary:hover {
-    background-color: #db4213;
-}
+/* === PAGE 2 === */
 
-.form-check label {
-    margin-left: 10px;
-    font-size: .7em;
-    color: #8c8c8c; 
-}
-
-.checkmark {
-    position: absolute;
-    top: 4px;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
-
-/* PAGE 2 */
-
-.text-page2 p{
+.lead {
     color: #8c8c8c;
-    font-size: 1em;
+    padding: .5em;
+    font-size: .9em;
+    margin: 0rem;
 }
 
-/*CARDS */
-
-.card-deck {
-    justify-content: center;
-    flex-wrap: wrap;
-}
+/* CARDS */
 
 .card {
-    align-items: center;
-    height: 60%;
+    height: 107px;
     padding: 10px;
-    margin: 6px;   
+    width: 25%;
 }
+
+.card-deck .card {
+    margin: 2%;
+}
+
 .card:active {
     border: 2px solid #db4213;
 }
 
 .card-body {
-    display: flex;
-    align-items: flex-end;
-    padding: .50rem;
+    padding: .1rem;
 }
 
-.card-body p{
-    text-align: center;
+.card-body p {
     color: #8c8c8c;
     font-size: .7em;
 }
 
-.card-deck .card {
-    width: 53%;
+.div-card-img {
+    width: 100%;
+    height: 90%;
+}
+
+.card-img {
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 .card textarea {
@@ -207,46 +171,37 @@ body {
     padding: 0rem;
 }
 
-.card textarea::-webkit-input-placeholder {
-    font-size: .7em;
-    text-align: center;
+.buttons {
+    width: 100%;
+    margin: 2%;
 }
 
-.btn-page2 {
-    display: block;
-}
-
-.btn .back {
+.btn-outline-secondary {
+    width: 120px;
     font-size: .7em;
-    padding: 1em;
     color: #8c8c8c;
-    background-color: #f3f3f3;
-    border: 1px solid #8c8c8c;
-    width: 85%;
+    padding: 1em;
 }
 
-.create button {
+.btn-outline-danger {
+    background-color: #db4213;
+    color: #eee;
     font-size: .7em;
     padding: 1em;
-    color: #eee;
-    background-color: #db4213;
-    width: 85%;
+    width: 265px;
 }
 
-/* PAGE 3 */
+/* === PAGE 3 === */
 
 .load {
-    margin-top: 30%; 
-    margin-bottom: 30%  
+    margin-top: 20%;
 }
 
-.load p {
-    text-align: center;
-    font-size: 1.4em;
-    font-weight: bold;
-    line-height: 1;
+.load h1 {
+    line-height: 1.2;
     color: #db4213;
     margin-top: 15px;
+    font-size: 1.5em;
 }
 
 .loader {
@@ -259,65 +214,136 @@ body {
     margin: 0 auto; 
 }
 
+/* === PAGE 4 === */
+
+.plan {
+    color: #db4213;
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 20%;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.jumb p {
+    color: #8c8c8c;
+    font-size: .7em;    
+}
+
+.btn-page4 button{
+    margin: 0 auto;
+    background-color: #db4213;
+    font-size: .7em;
+    padding: 1em;
+    color: #eee;
+    width: 90%;
+}
+
+.p4 {
+    border-left: 2px solid #E0E0E0;
+} 
+
+/* === KEY FRAMES === */
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-@media (max-width: 375px) {
-    .beneficios .item-2 {
-        padding: 0 7% 0 7%;
-    }  
+.prog1 {
+    -webkit-animation: prog1 1s ease 0s 1 normal forwards;
+    -moz-animation: prog1 1s ease 0s 1 normal forwards;
+    -ms-animation: prog1 1s ease 0s 1 normal forwards;
+    animation: prog1 1s ease 0s 1 normal forwards;
+}
+
+@keyframes prog1 {
+    0% {width: 0%; }
+    100% { width: 25%; }
+}
+
+.prog2 {
+    -webkit-animation: prog2 1s ease 0s 1 normal forwards;
+    -moz-animation: prog2 1s ease 0s 1 normal forwards;
+    -ms-animation: prog2 1s ease 0s 1 normal forwards;
+    animation: prog2 1s ease 0s 1 normal forwards;
+}
+
+@keyframes prog2 {
+    0% {width: 25%; }
+    100% { width: 50%; }
+}
+
+.prog3 {
+    -webkit-animation: prog3 1s ease 0s 1 normal forwards;
+    -moz-animation: prog3 1s ease 0s 1 normal forwards;
+    -ms-animation: prog3 1s ease 0s 1 normal forwards;
+    animation: prog3 1s ease 0s 1 normal forwards;
+}
+
+@keyframes prog3 {
+    0% {width: 50%; }
+    100% { width: 100%; }
 }
 
 
-/* PAGE 4 */
+/* === MEDIA QUERY === */
 
-.page-4{
-    margin-top: 7%; 
-    margin-bottom: 20%  
+@media (max-width: 576px) { 
+    .btn-outline-secondary {
+        width: 113px;
+    }
+    
+    .btn-outline-danger {
+        width: 243px;
+    }
 }
 
-.page-4 img {
-    display: block;
-    margin: auto auto;
-}
-
-.jumb p {
-    color: #8c8c8c;
-    font-size: .8em;    
-}
-
-.btn-page4{
-    margin-top: 1em;
-    width: 100%;
-    padding: 0rem;
-}
-
-
-/* MEDIA QUERY */
-
-@media (max-width: 450px) {
-    .beneficios .item-2 {
-        padding: 0 8% 0 8%;
-    }   
-
+@media (max-width: 450px) { 
     .estrutura {
         padding-top: 2em;
         padding-right: 5%;
         padding-left: 5%;
     }
 
-    .btn .back {
-        width: 85%;
+    .bloco {
+        top: 0px;
+    }
+
+    .page1 {
+        height: 150px;
+    }
+
+    .btn-outline-secondary {
+        width: 117px;
     }
     
-    .create button {
-        width: 85%;
+    .btn-outline-danger {
+        width: 253px;
     }
-
 }
 
+@media (max-width: 425px) { 
+    .btn-outline-secondary {
+        width: 110px;
+    }
+    
+    .btn-outline-danger {
+        width: 240px;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn-outline-secondary {
+        width: 99px;
+    }
+    
+    .btn-outline-danger {
+        width: 210px;
+    }
+}
 
 @media (max-width: 320px) {
     .card-body p{
@@ -329,8 +355,19 @@ body {
         padding-left: 5%;
     }
 
-    .beneficios .item-2 {
-        padding: 0 5% 0 5%;
-    }  
+    .btn-outline-secondary {
+        width: 85px;
+    }
+    
+    .btn-outline-danger {
+        width: 180px;
+    }
 
+    .lead {
+        font-size: .8em;
+    }
+
+    .progress-caption p {
+        font-size: .7em;
+    }
 }
