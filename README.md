@@ -1,5 +1,10 @@
 # SistemaCadastro
-Sistema de cadastro responsivo, desenvolvido utilizando CSS, HTML e Bootstrap.
+Sistema de cadastro responsivo, desenvolvido utilizando CSS, HTML e Bootstrap 4.1. 
+Animações desenvolvidas com @keyframes.
+
+## Screenshot 
+Screenshots da aplicação, utilizando device frame do Iphone. 
+
 
 ![Screenshot](img/screenshot/page1.png)
 ![Screenshot](img/screenshot/page2.png)
