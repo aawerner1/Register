@@ -330,6 +330,16 @@ input.form-control,
     }
 }
 
+@media (max-width: 415px) {
+    .btn-outline-secondary {
+        width: 110px;
+    }
+    
+    .btn-outline-danger {
+        width: 233px;
+    }
+}
+
 @media (max-width: 375px) {
     .btn-outline-secondary {
         width: 99px;
