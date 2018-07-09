@@ -32,8 +32,7 @@ input[type=number]:focus,
 [type=text].form-control:focus, 
 [type=password].form-control:focus, 
 [type=email].form-control:focus, 
-[type=tel].form-control:focus, 
-[contenteditable].form-control:focus {
+[type=tel].form-control:focus {
     outline: 0;
     border-color: #db4213;
     box-shadow: none !important;
@@ -108,14 +107,14 @@ input[type=number]:focus,
     color: #8c8c8c;
 }
 
-input.form-control {
+input.form-control,
+.input-group {
     margin-bottom: 1em;
 }
 
 .custom-checkbox label {
     color: #8c8c8c;   
 }
-
 .btn-secondary {
     padding: 1em;
     color: #f7f7f7; 
@@ -132,14 +131,11 @@ input.form-control {
 
 /* CARDS */
 
-.card {
+.card-deck .card {
+    margin: 2%;
     height: 107px;
     padding: 10px;
     width: 25%;
-}
-
-.card-deck .card {
-    margin: 2%;
 }
 
 .card:active {
@@ -167,7 +163,6 @@ input.form-control {
 
 .card textarea {
     border: none;
-    border-bottom: 1px solid #eee;
     padding: 0rem;
 }
 
@@ -184,11 +179,11 @@ input.form-control {
 }
 
 .btn-outline-danger {
-    background-color: #db4213;
-    color: #eee;
-    font-size: .7em;
-    padding: 1em;
     width: 265px;
+    font-size: .7em;
+    color: #eee;
+    padding: 1em;
+    background-color: #db4213;
 }
 
 /* === PAGE 3 === */
@@ -348,11 +343,6 @@ input.form-control {
 @media (max-width: 320px) {
     .card-body p{
         font-size: .6em;
-    }
-
-    .estrutura {
-        padding-right: 5%;
-        padding-left: 5%;
     }
 
     .btn-outline-secondary {
